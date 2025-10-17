@@ -4,6 +4,7 @@ phases:
     runtime-versions:
       nodejs: 22
     commands:
+      - pwd
       - npm install -g typescript
       - npm install -g vite
   pre_build:
