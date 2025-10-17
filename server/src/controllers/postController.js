@@ -1,6 +1,5 @@
 const { logger } = require('../utils/logger');
 const postService = require('../services/postService');
-const { get } = require('../routes/postRoutes');
 
 // create a new post for a user
 async function createNewPost(req, res) {
