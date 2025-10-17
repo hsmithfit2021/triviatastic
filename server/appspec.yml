@@ -2,15 +2,15 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ubuntu/triviatastic/server
+    destination: /home/ubuntu/triviatastic
     overwrite: true
 file_exists_behavior: OVERWRITE
 hooks:
   AfterInstall:
-    - location: scripts/after_install.sh
+    - location: server/scripts/after_install.sh
       timeout: 300
       runas: root
   ApplicationStart:
-    - location: scripts/app_start.sh
+    - location: server/scripts/app_start.sh
       timeout: 300
       runas: root
