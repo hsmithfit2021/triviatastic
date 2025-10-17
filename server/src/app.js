@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 //app.use(cors())
 app.use(cors({
-  origin: "http://triviatastic-frontend.s3-website-us-east-1.amazonaws.com/",
+  origin: "http://triviatastic-frontend.s3-website-us-east-1.amazonaws.com",
 }));
 
 // middleware logging every incoming request
